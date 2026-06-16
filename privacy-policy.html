@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy Policy — Project Folder Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="index.html">&larr; Project Folder Maker</a>
+<div class="card">
+<h1>Privacy Policy — Project Folder Maker</h1>
+<p><strong>Last updated:</strong> June 15, 2026</p>
+<p>Project Folder Maker ("the App") is an internal tool operated by Done Done Services, L.C. ("we," "us," or "our") for our own business use. This policy explains what data the App accesses, how it is used, and how it is protected.</p>
+<h2>Scope of this policy</h2>
+<p>The App is a private, internal Google Workspace add-on. It is not offered, sold, or made available to the public. It is used solely by authorized personnel of Done Done Services, L.C. to automate the creation of project folders in our own Google Drive based on projects in our own QuickBooks Online company.</p>
+<h2>Information the App accesses</h2>
+<p><strong>From QuickBooks Online (read-only):</strong> The App reads a limited set of customer and project records from our QuickBooks Online company in order to identify newly created projects. Specifically, it reads:</p>
+<ul>
+<li>Customer/project names (display names)</li>
+<li>Customer/project record IDs</li>
+<li>The "is project" flag and parent customer reference</li>
+</ul>
+<p>The App uses the QuickBooks <code>com.intuit.quickbooks.accounting</code> scope in read-only fashion for this purpose. It does <strong>not</strong> read invoices, payments, payroll, bank data, or financial amounts, and it does <strong>not</strong> create, modify, or delete any data in QuickBooks Online.</p>
+<p><strong>From Google Workspace:</strong> The App creates folders, Google Docs, and a copy of a spreadsheet template in our Google Drive, and manages a scheduled trigger that runs the synchronization. It accesses Google Drive, Docs, and Sheets only to create these items.</p>
+<h2>How information is used</h2>
+<p>Accessed information is used for a single purpose: to detect new QuickBooks projects and create a corresponding folder and document structure in Google Drive. Project names are used to name the folders and documents; project IDs are used to track which projects have already been processed so folders are not created twice.</p>
+<h2>How information is stored</h2>
+<p>The App does not operate any external server or database. The only data it retains is a list of QuickBooks project IDs (and their names) that it has already processed. This list is stored in Google Apps Script Properties within our own Google account and is used solely for deduplication.</p>
+<p>QuickBooks authorization tokens are stored securely by Google's Apps Script OAuth mechanism within our own Google account and are used only to make authorized read requests to QuickBooks Online.</p>
+<h2>Information sharing</h2>
+<p>We do not sell, rent, or share any information accessed by the App with any third party. Data does not leave our Google Workspace and QuickBooks Online environments except as part of the standard, authorized API communication between those two services and the App.</p>
+<h2>Data retention</h2>
+<p>Processed-project records are retained only as long as needed to prevent duplicate folder creation. Authorization tokens persist until access is revoked. Access can be revoked at any time by disconnecting the App from within QuickBooks Online (Settings → Apps) or by removing the stored authorization in Apps Script.</p>
+<h2>Security</h2>
+<p>Access is limited to authorized Done Done Services personnel through Google account permissions. All communication with QuickBooks Online and Google services occurs over encrypted HTTPS connections. Credentials are stored using Google's managed property and OAuth storage rather than in source code.</p>
+<h2>Changes to this policy</h2>
+<p>We may update this policy as the App changes. The "Last updated" date above reflects the most recent revision.</p>
+<h2>Contact</h2>
+<p>Questions about this policy can be directed to:</p>
+<p>Done Done Services, L.C.
+Email: dillon@donedoneservices.com</p>
+</div>
+<footer>Done Done Services, L.C. &middot; Internal application</footer>
+</div>
+</body>
+</html>
